@@ -52,6 +52,12 @@ tools = [
         description="use this tools to search youtube videos",
         args_schema=YoutubeInput,
     ),
+    Tool.from_function(
+        func=game,
+        name="game",
+        description="use this tools to explain questions about the game",
+        args_schema=GameInput,
+    ),
 ]
 
 tool_names = [tool.name for tool in tools]

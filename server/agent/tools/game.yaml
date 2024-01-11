@@ -1,0 +1,10 @@
+name: game
+description: Useful when you need to explain questions about the game
+parameters:
+  type: object
+  properties:
+    name:
+      type: string
+      description: Game to be narrated
+required:
+  - name
