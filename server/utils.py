@@ -412,8 +412,8 @@ def api_address() -> str:
     from configs.server_config import API_SERVER
 
     host = API_SERVER["host"]
-    if host == "0.0.0.0":
-        host = "127.0.0.1"
+    # if host == "0.0.0.0":
+    #     host = "127.0.0.1"
     port = API_SERVER["port"]
     return f"http://{host}:{port}"
 
